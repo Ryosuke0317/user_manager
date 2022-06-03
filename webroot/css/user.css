@@ -1,0 +1,40 @@
+table {
+    border-top:solid 1px #000000;
+    border-left:solid 1px #000000;
+    }
+    th {
+    border-right:solid 1px #000000;
+    border-bottom:solid 1px #000000;
+    padding: 10px;
+    }
+    td {
+    border-right:solid 1px #000000;
+    border-bottom:solid 1px #000000;
+    padding: 10px;
+    }
+
+/* Paginator */
+.paginator {
+    text-align: right;
+}
+.pagination {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1rem;
+}
+.pagination li {
+    margin: 0 0.5rem;
+}
+.prev.disabled a,
+.next.disabled a {
+    cursor: not-allowed;
+    color: #606c76;
+}
+.asc:after {
+    content: " \2193";
+}
+.desc:after {
+    content: " \2191";
+}
