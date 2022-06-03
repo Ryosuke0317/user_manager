@@ -11,18 +11,7 @@
 <h3>検索フォーム</h3>
     <fieldset>
     <?php
-        echo $this->Form->create($user,['action'=>'index']);
-        echo $this->Form->control('name', ['label' => '名前']);
-        echo $this->Form->control('sex', [
-        'type' => 'radio',
-        'label' => '性別',
-        'required' => false,
-        'options' => [
-          1 => '男性 ',
-          2 => '女性',
-         ],
-        ]);
-        echo '趣味';
+        
         echo $this->Form->control('hob1', ['type' => 'checkbox', 'label' => '映画鑑賞']);
         echo $this->Form->control('hob2', ['type' => 'checkbox', 'label' => '読書']);
         echo $this->Form->control('hob3', ['type' => 'checkbox', 'label' => '買い物']);
